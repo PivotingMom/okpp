@@ -1,15 +1,15 @@
-@import url(_colors.scss);
+/*   color variables */
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 600;
   color: #080808;
 }
@@ -48,12 +48,12 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2rem;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 1rem;
 }
 
@@ -97,8 +97,8 @@ body {
   .nav__menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .nav__menu li {
     display: block;
@@ -131,7 +131,7 @@ body {
 
 .btn {
   color: #e8e8e8;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 400;
   border-radius: 0.2rem;
   font-size: 1.4rem;
@@ -160,7 +160,8 @@ body {
   min-height: 40vh;
 }
 
-.footer__container, .menu__container {
+.footer__container,
+.menu__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
@@ -178,7 +179,7 @@ a {
   display: block;
   text-decoration: none;
   margin: 1rem;
-  color: #e8e8e8;
+  cursor: pointer;
 }
 
 a {
@@ -189,15 +190,7 @@ a {
 }
 
 a:hover {
-  color: #a51818;
-}
-
-.hero__container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  gap: 0;
+  color: orange;
 }
 
 .hero__heading {
@@ -237,8 +230,28 @@ img {
   padding: 10px;
 }
 
+.Pizza-column img {
+  width: 300px;
+  height: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0 2px 2px black;
+          box-shadow: 0 2px 2px black;
+  border: 1px solid #d9ddd7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  text-align: justify;
+  padding: 2.5px;
+  margin-bottom: 1px;
+  font-size: 12px;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 400px) {
-  .footer__container, .menu__container {
+  .footer__container,
+  .menu__container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
