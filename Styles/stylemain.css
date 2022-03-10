@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 1.5em;
   color: #3b3d3b;
@@ -71,7 +71,7 @@ body {
 .nav__menu a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 14px;
 }
 
 .nav__menu svg {
@@ -132,10 +132,9 @@ body {
 
 .btn {
   color: #e8e8e8;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
   border-radius: 0.2rem;
-  font-size: 1.4rem;
+  font-size: 14px;
   padding: 1.2rem 1.2rem;
 }
 
@@ -147,22 +146,48 @@ body {
 @media only screen and (min-width: 700px) {
   .btn {
     padding: 1rem 1rem;
-    font-size: 1rem;
+    font-size: 14px;
   }
 }
 
+.hero__heading {
+  font-size: 14px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.hero__img {
+  max-width: none;
+  width: 90%;
+}
+
+img {
+  width: 100%;
+}
+
+.button__wrapper {
+  text-align: center;
+}
+
+.btn {
+  color: #e8e8e8;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  padding: 1rem 1rem;
+  background-color: #ff6347;
+}
+
 .footer {
-  font-weight: 600;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   color: #e8e8e8;
   background-color: #a51818;
   justify-items: center;
   min-height: 40vh;
 }
 
-.footer__container,
-.menu__container {
+.footer__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
@@ -192,68 +217,102 @@ a {
 
 a:hover {
   color: orange;
-}
-
-.hero__heading {
-  font-size: 3.6rem;
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.hero__img {
-  max-width: none;
-  width: 90%;
-}
-
-img {
-  width: 100%;
+  cursor: pointer;
 }
 
 .footer__logo img {
   width: 30%;
 }
 
-.button__wrapper {
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 1.5em;
 }
 
-.btn {
-  color: #e8e8e8;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  border-radius: 0.2rem;
-  font-size: 1rem;
-  padding: 1rem 1rem;
-  background-color: #ff6347;
+.menu {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
 }
 
-.Pizza-column {
-  padding: 10px;
+.menu-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #a51818;
 }
 
-.Pizza-column img {
-  border: 3px solid #ddd;
+.menu-group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-item-image {
+  width: 80px;
+  height: 80px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1.5em;
+  border: 2px solid #e8e8e8;
   border-radius: 4px;
-  padding: 5px;
-  width: 300px;
-  height: 300px;
 }
 
-.Pizza-column p {
-  text-align: justify;
-  padding: 2.5px;
-  margin-bottom: 1px;
-  font-size: 12px;
+.menu-item-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-img:hover {
+.menu-item-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 1.5em;
+}
+
+.menu-item-description {
+  line-height: 1.6;
+}
+
+.menu-item-image:hover {
   -webkit-box-shadow: 0 0 2px 1px orange;
           box-shadow: 0 0 2px 1px orange;
 }
 
+@media screen and (min-width: 400px) {
+  .menu {
+    font-size: 16px;
+  }
+  .menu-group {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-item-image {
+    width: 125px;
+    height: 125px;
+  }
+}
+
 @media only screen and (min-width: 200px) and (max-width: 400px) {
-  .footer__container,
-  .menu__container {
+  .footer__container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: auto;
@@ -292,11 +351,10 @@ img:hover {
     color: #e8e8e8;
   }
   .hero__heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
     line-height: 1.4em;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 14px;
     margin-bottom: 1.5rem;
     background-color: rgba(0, 0, 0, 0.2);
   }
