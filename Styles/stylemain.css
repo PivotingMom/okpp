@@ -256,24 +256,19 @@ img:hover {
   .menu__container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 
 @media only screen and (min-width: 300px) {
   .hero__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    display: -flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
     gap: 5rem;
   }
   .hero__img {
