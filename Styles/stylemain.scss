@@ -238,13 +238,11 @@ img {
   padding: 10px;
 
   img {
+    border: 3px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
     width: 300px;
     height: 300px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
-    border: 1px solid #d9ddd7;
-    box-sizing: border-box;
   }
 
   p {
@@ -253,6 +251,9 @@ img {
     margin-bottom: 1px;
     font-size: 12px;
   }
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgb(255, 165, 0);
 }
 
 @media only screen and (min-width: 200px) and (max-width: 400px) {
