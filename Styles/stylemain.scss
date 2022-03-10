@@ -266,7 +266,7 @@ a:hover {
   flex-shrink: 0;
   object-fit: cover;
   margin-right: 1.5em;
-  border: 2px solid $white-1;
+  border: 3px solid $white-1;
   border-radius: 4px;
 }
 
@@ -286,6 +286,11 @@ a:hover {
 
 .menu-item-description {
   line-height: 1.6;
+}
+
+p {
+  text-align: justify;
+  text-justify: auto;
 }
 
 .menu-item-image:hover {

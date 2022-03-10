@@ -264,7 +264,7 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 1.5em;
-  border: 2px solid #e8e8e8;
+  border: 3px solid #e8e8e8;
   border-radius: 4px;
 }
 
@@ -290,6 +290,11 @@ a:hover {
 
 .menu-item-description {
   line-height: 1.6;
+}
+
+p {
+  text-align: justify;
+  text-justify: auto;
 }
 
 .menu-item-image:hover {
