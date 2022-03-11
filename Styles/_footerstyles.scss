@@ -1,0 +1,56 @@
+@import "colors";
+
+$font-size: 14px;
+$font-family: "Inter", sans-serif;
+$radius: 0.2rem;
+
+.footer {
+  text-transform: uppercase;
+  font-size: $font-size;
+  color: $white-1;
+  background-color: $bgcolor-3;
+  justify-items: center;
+  min-height: 40vh;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__copyright {
+  display: block;
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+a {
+  transition: color 100ms ease-in-out;
+  color: $white-1;
+  line-height: 1.5rem;
+}
+
+a:hover {
+  color: $bgcolor-5;
+  cursor: pointer;
+}
+
+.footer__logo img {
+  width: 30%;
+}
+
+//  <!--end of footer-->
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
