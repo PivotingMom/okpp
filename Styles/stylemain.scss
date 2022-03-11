@@ -1,4 +1,4 @@
-@import url(styles/_colors.scss);
+@import "styles/_colors.scss";
 
 $font-family: "Inter", sans-serif;
 $font-size: 14px;
@@ -19,147 +19,12 @@ body {
   line-height: 1.5em;
   color: $black-1;
 }
-//  <!--nav-->
-.nav {
-  border-bottom: 1px solid $bgcolor-3;
 
-  &__toggle {
-    position: absolute;
-    cursor: pointer;
-    margin: 0rem 1rem;
-    right: 0;
+@import "/styles/navstyles";
 
-    svg {
-      width: 1.5rem;
-      fill: $black-3;
-    }
-
-    .close {
-      display: none;
-    }
-
-    .menu {
-      margin-top: 0.2rem;
-    }
-  }
-
-  &__checkbox {
-    display: none;
-  }
-
-  &__menu {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    margin: 1rem;
-
-    li {
-      list-style: none;
-      display: none;
-
-      &:first-child {
-        margin-right: auto;
-        display: block;
-      }
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      font-size: $font-size;
-    }
-
-    svg {
-      width: 1.5rem;
-      fill: $black-3;
-    }
-  }
-}
-
-#nav__checkbox:checked ~ ul.nav__menu li {
-  display: block;
-}
-
-#nav__checkbox:checked ~ label.nav__toggle .close {
-  display: block;
-}
-
-#nav__checkbox:checked ~ label.nav__toggle .menu {
-  display: none;
-}
-
-@media only screen and (min-width: 560px) {
-  .nav {
-    &__toggle {
-      display: none;
-    }
-
-    &__menu {
-      flex-direction: row;
-
-      li {
-        display: block;
-      }
-    }
-  }
-}
-
-.phonelink {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 30px;
-}
-.phoneicon {
-  width: 50px;
-  height: 50px;
-}
-@media screen and (max-width: 480px) {
-  .phoneicon {
-    display: block;
-  }
-}
-@media screen and (min-width: 481px) {
-  .phoneicon {
-    display: none;
-  }
-}
-.btn {
-  color: $white-1;
-  font-family: $font-family;
-  border-radius: $radius;
-  font-size: $font-size;
-  padding: 1.2rem 1.2rem;
-}
-.primary-btn {
-  color: $white-1;
-  background: $bgcolor-1;
-}
-@media only screen and (min-width: 700px) {
-  .btn {
-    padding: 1rem 1rem;
-    font-size: $font-size;
-  }
-}
-//  <!--end nav-->
-
-.menu-header {
-  padding: 60px;
-  text-align: center;
-  background: $bgcolor-3;
-  color: white;
-  font-size: 30px;
-}
 //  <!--hero section-->
 
 .hero__heading {
-  font-size: $font-size;
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.hero__img {
   max-width: none;
   width: 90%;
 }
