@@ -1,7 +1,12 @@
 //  <!--menu-->
-@import "styles/_colors.scss";
+
+@import "colors";
 
 $font-family: "Inter", sans-serif;
+$font-size: 14px;
+$radius: 0.2rem;
+
+@import "navstyles";
 
 .menu__hero__heading {
   max-width: none;
@@ -53,7 +58,6 @@ $font-family: "Inter", sans-serif;
   }
 }
 
-/* 
 .container {
   max-width: 1200px;
   margin: 0;
@@ -133,4 +137,3 @@ p {
     height: 125px;
   }
 }
- */

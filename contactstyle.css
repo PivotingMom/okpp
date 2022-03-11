@@ -1,0 +1,24 @@
+h1 {
+  font-family: cursive;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+p {
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  margin: 1.2rem;
+}
+
+strong {
+  font-family: cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #debd94;
+  margin-bottom: 2.5rem;
+}
+/*# sourceMappingURL=contactstyle.css.map */
