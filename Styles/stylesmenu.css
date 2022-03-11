@@ -1,3 +1,4 @@
+@im $font-family: "Inter", sans-serif;
 .nav {
   border-bottom: 1px solid #a51818;
 }
@@ -234,6 +235,17 @@ p {
 }
 
 @media screen and (min-width: 520px) {
+  .menu__header {
+    padding: 20px;
+    text-align: center;
+    background: orange;
+    color: white;
+    height: 40vh;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 720px) {
   .menu__header {
     padding: 60px;
     text-align: center;

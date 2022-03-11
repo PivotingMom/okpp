@@ -1,24 +1,137 @@
-h1 {
-  font-family: cursive;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.nav {
+  border-bottom: 1px solid #a51818;
 }
 
-p {
-  padding: 1rem 1rem;
-  font-size: 1rem;
-  margin: 1.2rem;
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
 }
 
-strong {
-  font-family: cursive;
+.nav__toggle svg {
+  width: 1.5rem;
+  fill: #5b6359;
+}
+
+.nav__toggle .close {
+  display: none;
+}
+
+.nav__toggle .menu {
+  margin-top: 0.2rem;
+}
+
+.nav__checkbox {
+  display: none;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #debd94;
-  margin-bottom: 2.5rem;
+  margin: 1rem;
 }
+
+.nav__menu li {
+  list-style: none;
+  display: none;
+}
+
+.nav__menu li:first-child {
+  margin-right: auto;
+  display: block;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.nav__menu svg {
+  width: 1.5rem;
+  fill: #5b6359;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+
+@media only screen and (min-width: 560px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav__menu li {
+    display: block;
+  }
+}
+
+.phonelink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px;
+}
+
+.phoneicon {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .phoneicon {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .phoneicon {
+    display: none;
+  }
+}
+
+.btn {
+  color: #e8e8e8;
+  font-family: "Inter", sans-serif;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  padding: 1.2rem 1.2rem;
+}
+
+.primary-btn {
+  color: #e8e8e8;
+  background: #FF6347;
+}
+
+@media only screen and (min-width: 700px) {
+  .btn {
+    padding: 1rem 1rem;
+    font-size: 14px;
+  }
+}
+
+@i;
 /*# sourceMappingURL=contactstyle.css.map */
