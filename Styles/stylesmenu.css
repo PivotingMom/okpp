@@ -133,6 +133,15 @@
   }
 }
 
+.menu__header {
+  padding: 10px;
+  text-align: center;
+  background: orange;
+  color: white;
+  height: 40vh;
+  font-size: 14px;
+}
+
 .container {
   margin: 0;
   padding: 1.5em;
@@ -221,6 +230,17 @@ p {
   .menu-item-image {
     width: 125px;
     height: 125px;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .menu__header {
+    padding: 60px;
+    text-align: center;
+    background: orange;
+    color: white;
+    height: 40vh;
+    font-size: 30px;
   }
 }
 

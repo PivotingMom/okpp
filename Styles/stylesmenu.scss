@@ -8,6 +8,15 @@ $radius: 0.2rem;
 
 @import "navstyles";
 
+.menu__header {
+  padding: 10px;
+  text-align: center;
+  background: $bgcolor-5;
+  color: white;
+  height: 40vh;
+  font-size: $font-size;
+}
+
 .container {
   margin: 0;
   padding: 1.5em;
@@ -86,4 +95,16 @@ p {
     height: 125px;
   }
 }
+
+@media screen and (min-width: 520px) {
+  .menu__header {
+    padding: 60px;
+    text-align: center;
+    background: $bgcolor-5;
+    color: white;
+    height: 40vh;
+    font-size: 30px;
+  }
+}
+
 @import "footerstyles";
