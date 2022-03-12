@@ -1,5 +1,6 @@
 $font-family: "Inter", sans-serif;
 $font-size: 14px;
+$font-size2: 16px;
 
 $radius: 0.2rem;
 
@@ -13,7 +14,7 @@ $radius: 0.2rem;
 
 body {
   font-family: $font-family;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5em;
   color: $black-1;
 }

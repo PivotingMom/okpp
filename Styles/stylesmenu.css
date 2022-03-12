@@ -1,4 +1,35 @@
-@im $font-family: "Inter", sans-serif;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #3b413a;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #3b413a;
+}
+
 .nav {
   border-bottom: 1px solid #a51818;
 }
@@ -12,7 +43,7 @@
 
 .nav__toggle svg {
   width: 1.5rem;
-  fill: #5b6359;
+  fill: #080808;
 }
 
 .nav__toggle .close {
@@ -60,7 +91,7 @@
 
 .nav__menu svg {
   width: 1.5rem;
-  fill: #5b6359;
+  fill: #080808;
 }
 
 #nav__checkbox:checked ~ ul.nav__menu li {
@@ -99,7 +130,10 @@
 
 .phoneicon {
   width: 50px;
-  height: 50px;
+  height: 30px;
+  padding: 1px;
+  margin-right: 5px;
+  color: #080808;
 }
 
 @media screen and (max-width: 480px) {
@@ -124,7 +158,7 @@
 
 .primary-btn {
   color: #e8e8e8;
-  background: #FF6347;
+  background: #ff6347;
 }
 
 @media only screen and (min-width: 700px) {
@@ -135,12 +169,30 @@
 }
 
 .menu__header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 2rem;
+  border-color: #a51818;
   padding: 10px;
   text-align: center;
   background: orange;
-  color: white;
+  color: #e8e8e8;
   height: 40vh;
   font-size: 14px;
+}
+
+.menu__header .menu__header__heading {
+  margin-bottom: 1rem;
+}
+
+.menu__header .menu__header__text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  line-height: 1.4em;
+  padding-top: 1rem;
 }
 
 .container {
@@ -236,7 +288,7 @@ p {
 
 @media screen and (min-width: 520px) {
   .menu__header {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     background: orange;
     color: white;

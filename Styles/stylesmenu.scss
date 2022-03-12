@@ -1,18 +1,33 @@
-//  <!--menu-->
 
 @import "colors";
 
-@import "variables";
+@import "variablesmain";
 
 @import "navstyles";
 
 .menu__header {
+  box-sizing: border-box;
+  border-bottom: 2rem;
+  border-color: $bgcolor-3;
   padding: 10px;
   text-align: center;
   background: $bgcolor-5;
-  color: white;
+  color: $white-1;
   height: 40vh;
   font-size: $font-size;
+
+  .menu__header__heading {
+    margin-bottom: 1rem;
+  }
+
+  .menu__header__text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4em;
+    padding-top: 1rem;
+  }
 }
 
 .container {
@@ -96,7 +111,7 @@ p {
 
 @media screen and (min-width: 520px) {
   .menu__header {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     background: $bgcolor-5;
     color: white;

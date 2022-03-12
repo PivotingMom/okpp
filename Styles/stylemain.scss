@@ -5,7 +5,6 @@
 
 //  <!--hero section-->
 
-
 .hero__heading {
   max-width: none;
   width: 90%;
@@ -58,7 +57,7 @@ img {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: #e8e8e8;
+    color: $white-1;
   }
   .hero__heading {
     font-family: $font-family;
