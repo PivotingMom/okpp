@@ -280,6 +280,15 @@ ul {
   text-align: left;
 }
 
+.mapcontainer {
+  position: relative;
+  border: 2px solid orange;
+  min-width: 100%px;
+  min-height: 100%px;
+  padding-left: 30px;
+  padding-top: 0.5em;
+}
+
 .footer {
   text-transform: uppercase;
   font-size: 14px;
