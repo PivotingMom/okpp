@@ -3,4 +3,41 @@
 @import "colors";
 @import "footerstyles";
 
+body {
+  background: $white-2;
+}
 
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 18rem;
+  padding: 40px 47px;
+  box-shadow: rgba($color: 255, 165, 0, $alpha: 0.8);
+  height: 600px;
+  width: 800px;
+}
+.about-container img {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
+}
+.about-details {
+  margin: 0 45px;
+}
+.span {
+  color: $bgcolor-2;
+}
+h2 {
+  font-family: $fontfamily;
+  font-weight: 100;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: $black-3;
+  font-size: 15px;
+}
+@import "footerstyles";
