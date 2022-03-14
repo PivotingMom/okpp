@@ -23,68 +23,76 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-}
-.content img {
-  width: 50%;
-  height: 50%;
-  flex-shrink: 0;
-  object-fit: cover;
-  margin-right: 1.7em;
-  border: 3px solid $white-1;
-  border-radius: 4px;
+
+  img {
+    width: 40%;
+    height: 40%;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.7em;
+    border: 3px solid $white-1;
+    border-radius: 4px;
+  }
 }
 
 .iframe-container {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
+  padding-bottom: 40%;
+  margin: 5px 0; 
+  height: 40%;
+  width: 40%;
+  border: 3px solid $white-1;
+  border-radius: 4px;
 
-.iframe-container iframe {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  iframe {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .text {
   max-width: 100%;
   padding: 0 auto;
   color: $white-1;
-}
-.text ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 2px;
-  border: 1px solid $bgcolor-5;
-}
 
-.text ul li {
-  text-align: center;
-  text-decoration: dotted;
-  padding: 16px;
-}
-.text h1 {
-  font-size: 35px;
-  margin-bottom: 45px;
-  padding: 20px;
-}
+  h1 {
+    font-size: 35px;
+    margin-bottom: 45px;
+    padding: 20px;
+  }
 
-.text h5 {
-  font-size: 25px;
-  margin-bottom: 25px;
-  letter-spacing: 2px;
-  padding: 20px;
-}
-.text p {
-  font-size: 18px;
-  margin-bottom: 45px;
-  letter-spacing: 1px;
-  line-height: 28px;
-  text-align: justify;
-  padding: 20px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    border: 1px solid $bgcolor-5;
+
+    li {
+      text-align: center;
+      text-decoration: dotted;
+      padding: 16px;
+    }
+  }
+
+  h5 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: justify;
+    padding: 20px;
+  }
 }
 
 @media screen and (mix-width: 450px) {
