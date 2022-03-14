@@ -1,2 +1,2 @@
 # okpp
-http://okotokspizzashop.ml/
+https://www.okotokspizzashop.ml/
